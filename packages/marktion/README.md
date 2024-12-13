@@ -97,11 +97,7 @@ function Editor() {
     basePath: import.meta.env.VITE_OPENAI_BASE_URL
   });
 
-  return (
-    <ReactEditor ref={editorRef} plugins={[ai.plugin]}>
-      {ai.element}
-    </ReactEditor/>
-  )
+  return <ReactEditor ref={editorRef} plugins={[ai.plugin]} />;
 }
 ```
 
